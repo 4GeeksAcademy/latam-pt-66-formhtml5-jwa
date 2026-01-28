@@ -77,11 +77,18 @@
                   <div class="row">
                     <div class="tarjAccetped col-md-6">
 
-                      <input type="radio" name="tarj1" id="tarj1" />
-                      <i class="bi bi-credit-card"></i>
-                      <input type="radio" name="tarj2" id="tarj2" />
-                      <i class="bi bi-credit-card-2-back-fill"></i>
-                      <input type="radio" name="tarj3" id="tarj3" />
+                       <input type="radio" name="tarjeta" id="tarjeta1" value="visa" />
+                      <label for="tarjeta1">
+                        <i class="bi bi-credit-card"></i> 
+                      </label>
+                      
+                      <input type="radio" name="tarjeta" id="tarjeta2" value="mastercard" />
+                      <label for="tarjeta2">
+                        <i class="bi bi-credit-card-2-back-fill"></i> 
+                      </label>
+                      
+                      <input type="radio" name="tarjeta" id="tarjeta3" value="amex" />
+                      <label for="tarjeta3">
                       <i class="bi bi-postcard-heart"></i>
                     </div>
                   </div>
@@ -97,19 +104,12 @@
                   <div class="mb-3">
                     <label for="State" class="form-label">State</label>
                     <div class="input-group mb-3">
-                      <button
-                        class="btn btn-outline-secondary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Pick a State
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">State 1</a></li>
-                        <li><a class="dropdown-item" href="#">State 2</a></li>
-                        <li><a class="dropdown-item" href="#">State 3</a></li>
-                      </ul>
+                      <select class="form-select" id="State">
+                        <option value="" selected disabled>Pick a State</option>
+                        <option value="state1">State 1</option>
+                        <option value="state2">State 2</option>
+                        <option value="state3">State 3</option>
+                      </select>
                     </div>
                   </div>
                     <div class="mb-3">
